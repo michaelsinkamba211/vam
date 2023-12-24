@@ -2001,6 +2001,9 @@ footer .footer_wrapper {
   place-items: center;
   align-items: first baseline;
 }
+.footer_wrapper .ones{
+  padding: 0;
+}
 
 @media all and (max-width: 840px) {
   footer .footer_wrapper {
