@@ -37,6 +37,9 @@ body {
 body {
   overflow-x: hidden;
 }
+section{
+  overflow-x: hidden;
+}
 
 :root {
   --main-color: #033a80;
