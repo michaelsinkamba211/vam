@@ -20,6 +20,7 @@
   scroll-padding-top: 2rem;
   list-style: none;
   text-decoration: none;
+  
 }
 
 
@@ -34,11 +35,9 @@ body {
   background-color: #fff; 
 }
 
-html,body {
-  overflow-x: hidden;
-}
 
-section{
+
+html,body {
   overflow-x: hidden;
 }
 
@@ -2001,7 +2000,9 @@ footer .footer_wrapper {
   color: #fff;
   place-items: center;
   align-items: first baseline;
+  
 }
+
 .footer_wrapper .ones{
   padding: 0;
 }
@@ -2016,6 +2017,7 @@ footer .footer_wrapper {
       "third"
       "fourth";
     place-items: initial;
+    
   }
 
   footer .footer_wrapper div {
@@ -2082,6 +2084,7 @@ footer .logo {
   font-size: 1.5rem;
   float: right;
 }
+
 
 
 .logo a {
