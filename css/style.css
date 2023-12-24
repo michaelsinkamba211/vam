@@ -34,9 +34,10 @@ body {
   background-color: #fff; 
 }
 
-body {
+html,body {
   overflow-x: hidden;
 }
+
 section{
   overflow-x: hidden;
 }
