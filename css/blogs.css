@@ -390,24 +390,19 @@ nav input {
   height: fit-content;
   position: relative;
   z-index: -1;
+  height: auto;
 }
 
-.home {
-  /* Default styles that apply to all devices */
-  width: 100%;
-  /* Add other styles as needed */
 
-  /* Tablet and Laptop styles */
-  @media (min-height: 500px){
-    height: 100vh; /* 100% of the viewport height */
-  }
 
-  /* Phone styles */
-  @media (max-width: 499px) {
-    /* Height follows content, adjust as needed */
-    height: auto;
+@media all and (min-height:500px){
+  .home{
+    height: 100dvh;
   }
 }
+
+
+
 
 .home::after {
   content: "";
