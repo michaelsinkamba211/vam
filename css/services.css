@@ -393,12 +393,22 @@ nav input {
   z-index: -1;
 }
 
-@media screen and (min-width:400px){
-  .home{
-    height: 100dvh;
+.home {
+  /* Default styles that apply to all devices */
+  width: 100%;
+  /* Add other styles as needed */
+
+  /* Tablet and Laptop styles */
+  @media (min-height: 500px){
+    height: 100vh; /* 100% of the viewport height */
+  }
+
+  /* Phone styles */
+  @media (max-width: 499px) {
+    /* Height follows content, adjust as needed */
+    height: auto;
   }
 }
-
 .home::after {
   content: "";
   position: absolute;
