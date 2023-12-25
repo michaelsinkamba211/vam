@@ -45,9 +45,9 @@ window.addEventListener("scroll", () => {
     companyName.style.color = "#707070";
   } else {
     navSection.style.backgroundColor = "transparent";
-    navLinks.forEach((link) => (link.style.color = "rgb(179, 0, 0)"));
+    navLinks.forEach((link) => (link.style.color = "rgb(226, 18, 18)"));
 
-    companyName.style.color = "rgb(179, 0, 0)";
+    companyName.style.color = "rgb(226, 18, 18)";
     navLinks.forEach((link) => (link.style.fontWeight = "700"));
   }
 });
@@ -125,8 +125,8 @@ window.addEventListener("scroll", () => {
       });
 
       // Apply styles for the currently active link
-      links[index].style.borderBottom = "2px solid rgb(179, 0, 0)";
-      links[index].style.color = "rgb(179, 0, 0)";
+      links[index].style.borderBottom = "2px solid rgb(226, 18, 18)";
+      links[index].style.color = "rgb(226, 18, 18)";
       links[index].style.padding = "10px 15px";
       links[index].style.backgroundColor = "#insert";
     }

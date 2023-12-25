@@ -81,6 +81,7 @@ footer {
   body{
     /* font-family: 'Great Vibes'; */
     font-size: 1rem;
+    background-color: #f8f8f8;
   }
 header,
 .about,
@@ -391,9 +392,20 @@ nav input {
   z-index: -1;
 }
 
-@media screen and (min-width:400px){
-  .home{
-    height: 100dvh;
+.home {
+  /* Default styles that apply to all devices */
+  width: 100%;
+  /* Add other styles as needed */
+
+  /* Tablet and Laptop styles */
+  @media (min-height: 500px){
+    height: 100vh; /* 100% of the viewport height */
+  }
+
+  /* Phone styles */
+  @media (max-width: 499px) {
+    /* Height follows content, adjust as needed */
+    height: auto;
   }
 }
 
@@ -1309,9 +1321,9 @@ background-color: rgba(0, 0, 0, 0.3);
 .engineers .all_engineers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  padding: 0 85px;
+  padding: 0 205px;
   width: auto;
-  gap: 1px;
+  gap: 10px;
 }
 
 @media screen and (max-width:900px){
@@ -1346,6 +1358,8 @@ background-color: rgba(0, 0, 0, 0.3);
 .all_engineers .engineer .contents {
   background-color: transparent;
   transition: background-color 0.3s ease; 
+  background-color: #fff;
+  
 }
 
 .all_engineers .engineer:hover {
@@ -1385,21 +1399,30 @@ background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
 }
 
+
 .all_engineers .engineer .one {
   height: 350px;
-  background: url("../images/engineer_one.PNG") center/cover no-repeat;
+  background: url("../images/engineer_three.jpg") center/cover no-repeat;
   background-position: center top;
 }
 
 .all_engineers .engineer .two {
   height: 350px;
-  background: url("../images/engineer_two.PNG") center/cover no-repeat;
+  background: url("../images/egineer_two.png") center/cover no-repeat;
   background-position: center top;
 }
 
+.all_engineers .engineer .four {
+  height: 350px;
+  
+  background: url("../images/micheal_sinkamba.png") center/cover no-repeat;
+  background-position: center top;
+}
+
+
 .all_engineers .engineer .three {
   height: 350px;
-  background: url("../images/engineer_three.PNG") center/cover no-repeat;
+  background: url("../images/engineer_three.jpg") center/cover no-repeat;
   background-position: center top;
 }
 
@@ -1759,7 +1782,7 @@ background-color: rgba(0, 0, 0, 0.3);
   gap: 5px;
   margin: 0 auto; /* Center the container horizontally */
   margin-top: 30px;
-  align-items: center; /* Center items along the block axis */
+  align-items: start;
 }
 
 .all_blogs .blog {
@@ -1772,6 +1795,11 @@ background-color: rgba(0, 0, 0, 0.3);
   background-color: #fff;
   z-index: 1;
 }
+
+
+
+
+
 
 
 
