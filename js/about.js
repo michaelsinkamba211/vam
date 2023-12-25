@@ -4,11 +4,11 @@ const h2Element = document.querySelector(".home_content h2");
 const onesElement = document.querySelector(".home .ones");
 const twosElement = document.querySelector(".home .twos");
 
-const images = ["../images/home_image.jpg", "../images/home_img.jpg"];
+// const images = ["../images/home_image.jpg", "../images/home_img.jpg"];
 
 const texts = [
-  "Quality in <br> <span id='special'>Stainless Steel Welding and Pipi Fabrication</span>",
-  "Quality in <br> <span id='special'>Stainless Steel Welding and Pipi Fabrication</span>"
+  "",
+  ""
 ];
 
 let currentIndex = 0;

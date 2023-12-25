@@ -57,6 +57,7 @@ html,body {
   --logo-font: 1rem;
   --primary-color: #ffd615;
   --primary-color:rgb(226, 18, 18);
+  --primary-color:rgb(179, 0, 0);
   --black: rgb(0, 0, 0);
 }
 
@@ -133,17 +134,22 @@ header nav {
 header nav h1 {
   grid-area: companyName;
   line-height: 60px;
-  font-family: "Bad Script";
   color: var(--white);
-  color: var(--primary-color);
+  color: rgb(226, 18, 18);
   font-size: 1.2rem;
+  font-weight: 800;
+  place-items: center;
 }
 
 header nav h1 .fa-solid {
   display: inline-block;
   color: var(--primary-color);
+  color: rgb(226, 18, 18);
   align-self: center;
   font-size: 1.7rem;
+  align-self: center;
+  position: relative;
+  top:2px;
 }
 
 header nav .nav-links {
@@ -161,6 +167,7 @@ header nav .nav-links li a {
   text-decoration: none;
   padding:10px 15px;
   color: var(--primary-color);
+  color: rgb(226, 18, 18);
   text-transform: uppercase;
   font-weight: 800;
   font-size: .9rem;
@@ -182,6 +189,7 @@ header nav .nav-links li::after {
   height: 2px;
   background-color: var(--primary-color);
   transition: width 0.3s ease-out, left 0.3s ease-out;
+  
 }
 
 
@@ -231,13 +239,13 @@ header .lines::before,
 header .lines::after {
   width: 30px;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: rgb(226, 18, 18);
 }
 
 header .lines {
   display: block;
   position: relative;
-  top: 8px;
+  top: 6px;
   margin: 0 5px;
   display: none;
 }
@@ -245,14 +253,14 @@ header .lines {
 header .lines::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 5px;
 }
 
 header .lines::after {
   content: "";
   align-self: center;
   position: absolute;
-  top: -6px;
+  top: -5px;
 }
 
 .input:checked ~ label .lines::before {
@@ -346,7 +354,17 @@ header nav .nav-links  li a {
   }
 
   header .lines {
-    top: -5px;
+    top: 11px;
+  }
+}
+
+#hidevams{
+  display: inline-block;
+}
+
+@media all and (max-width:400px){
+  #hidevams{
+    display: none;
   }
 }
 
@@ -368,9 +386,6 @@ nav input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 750px; */
-  /* height: 100dvh; */
-  /* height: 100svh; */
   height: fit-content;
   position: relative;
   z-index: -1;
@@ -387,7 +402,7 @@ nav input {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.65);
   z-index: 0;
 }
 
@@ -599,7 +614,7 @@ nav input {
 
 
 .about .image {
-  height: 460px;
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -638,10 +653,6 @@ nav input {
 
 .about .content {
   padding: 10px 20px;
-  /* border: 1px solid #ccc; */
-  border-radius: 8px;
-  /* background-color: #f8f8f8; */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   width: auto;
   margin: 0 auto;
 }
@@ -678,6 +689,26 @@ ul {
   width: 100%;
 }
 
+.our_profile{
+  display: block;
+  
+  background-color: #212529;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top:5px;
+}
+.our_profile:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #ccc;
+  background-color: var(--primary-color);
+}
+
+
 /* what we can offer you
  */
 
@@ -691,8 +722,8 @@ font-size: 1.2rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
+  
 }
 
 body{
@@ -704,25 +735,18 @@ body{
   width: 250px;
   width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding: 5px 10px;
   background-color: #fff;
   margin-top: 5px;
-  /* border-radius: 12px; */
 }
 
 @media screen and (min-width:650px){
   .content .what_we_can_offer .service{
-    width:47%;
+    width:49%;
   }
 }
 
-
-.content .what_we_can_offer .service:hover{
-  background-color: #212529;
-  color: #f8f8f8;
-  border-radius: 7px;
-}
 
 
 
@@ -737,6 +761,9 @@ body{
 }
 
 
+.about .content .what_we_can_offer .service .text{
+  width: 100%;
+}
 
 
 /* an aside banner */
@@ -849,6 +876,7 @@ aside .aside_container .right{
   padding: 0 20px;
   margin: 0 auto;
   margin-top: 50px;
+
 }
 
 .services .sub_title {
@@ -913,7 +941,7 @@ aside .aside_container .right{
 
 
 .services .image {
-  height: 600px;
+  height: 550px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -940,15 +968,15 @@ aside .aside_container .right{
   z-index: -1;
   margin: 0 auto;
   border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: url("../images/service_image.jpg") center/cover no-repeat;
 }
 
 .services .content {
-  padding: 10px 0px;
-  border-radius: 8px;
+  padding: 0 10px;
+  /* border-radius: 8px; */
   width: auto;
   margin: 0 auto;
+  
 }
 
 
@@ -965,7 +993,7 @@ aside .aside_container .right{
   
   .services .image {
       width:100%;
-      height: 580px;
+      height: 520px;
     }
 
   .services .content {
@@ -990,10 +1018,6 @@ aside .aside_container .right{
   }
   
 
- 
-
-
-
 .about .content #special_two {
   color: var(--primary-color);
 }
@@ -1010,6 +1034,7 @@ aside .aside_container .right{
 
 .services .content .offers{
 font-size: 1.2rem;
+
 }
 
 .services .content .what_we_can_offer{
@@ -1021,7 +1046,6 @@ font-size: 1.2rem;
 }
 
 .services .content .what_we_can_offer .service{
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   width: 250px;
   width: 100%;
   display: flex;
@@ -1033,7 +1057,7 @@ font-size: 1.2rem;
 
 .services .content .what_we_can_offer .service{
   background-color: #212529;
-  background-color: #3d424a;
+  background-color: #fff;
   color: #f8f8f8;
   position: relative;
   z-index: 1;
@@ -1046,7 +1070,7 @@ font-size: 1.2rem;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,.4);
+  /* background-color: rgba(0,0,0,.4); */
   z-index: 2;
 }
 
@@ -1054,15 +1078,10 @@ font-size: 1.2rem;
 .services .text,
 .services .mb-0{
   z-index: 3;
+  color: #212529;
 }
 
 
-
-.services .content .what_we_can_offer .service:nth-child(even){
-  
-  background-color:rgb(226, 18, 18);
-  color: #f8f8f8;
-}
 
 .services .what_we_can_offer .service .fa-solid{
   font-size: 60px;
@@ -1084,16 +1103,14 @@ font-size: 1.2rem;
 .services .what_we_can_offer .service p{
   margin: 5px 0;
   font-size: 1rem;
-  /* font-family: sans-serif; */
-  /* font-family: 'Open Sans', sans-serif; */
 }
 
 .services .what_we_can_offer .service a{
-  color: #212529;
+  color: #ccc;
   text-decoration: none;
   display: block;
   cursor: pointer;
-  background-color: #f8f8f8;
+  background-color: #212529bb;
   width: fit-content;
   padding: 5px;
   text-transform: uppercase;
@@ -1105,6 +1122,14 @@ font-size: 1.2rem;
 .services .what_we_can_offer .service a:hover{
   background-color: var(--primary-color);
   color: #ccc;
+}
+.services .what_we_can_offer .icon{
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+}
+.services .text{
+  margin-right: 30px;
 }
 
 /* who are in the company */
@@ -1143,9 +1168,10 @@ background-color: rgba(0, 0, 0, 0.3);
   justify-content: center; 
   max-width: 1160px;
   margin: 0 auto;
+  
 }
 
-.one {
+.who_are_in_org .one {
   flex: 0 0 20% ; 
   box-sizing: border-box;
   padding: 10px;
@@ -1165,12 +1191,12 @@ background-color: rgba(0, 0, 0, 0.3);
   align-items: center;
 }
 
-.one .text {
+.who_are_in_org.one .text {
   text-align: center;
 }
 
 /* Additional styling for the icon */
-.one .icon i {
+.services .one .icon i {
   display: block;
 }
 
@@ -1196,6 +1222,7 @@ background-color: rgba(0, 0, 0, 0.3);
   display: block;
   width: auto;
   color: var(--primary-color);
+  color: rgb(226, 18, 18);
 }
 
 .who_are_in_org p.name {
@@ -1206,6 +1233,7 @@ background-color: rgba(0, 0, 0, 0.3);
 .who_are_in_org p.numbers{
   font-size: 40px;
   color: var(--primary-color);
+  color: rgb(226, 18, 18);
   font-weight: 700;
 }
 
@@ -1483,25 +1511,37 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .gallery .one {
   position: relative;
-  background: url("../images/photo_one.jpg") center/cover no-repeat;
+  background: url("../images/Stainless_steel_pipelines.jpg") center/cover no-repeat;
   z-index: 2;
 }
 
 .gallery .two {
   position: relative;
-  background: url("../images/photo_two.jpg") center/cover no-repeat;
+  background: url("../images/Stainless_steel_dairy_equipment.jpg") center/cover no-repeat;
   z-index: 2;
 }
 
 .gallery .three {
   position: relative;
-  background: url("../images/photo_three.jpg") center/cover no-repeat;
+  background: url("../images/Sustainable_beverage_production.jpg") center/cover no-repeat;
   z-index: 2;
 }
 
 .gallery .four {
   position: relative;
-  background: url("../images/photo_one.jpg") center/cover no-repeat;
+  background: url("../images/Stainless_steel_food_processing.jpg") center/cover no-repeat;
+  z-index: 2;
+}
+
+.gallery .five {
+  position: relative;
+  background: url("../images/Stainless\ _steel_pharmaceutical_equipment.jpg") center/cover no-repeat;
+  z-index: 2;
+}
+
+.gallery .six {
+  position: relative;
+  background: url("../images/Industrial_commissioning.jpg") center/cover no-repeat;
   z-index: 2;
 }
 
@@ -1754,19 +1794,20 @@ background-color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
+
 .all_blogs .blog .one {
   height: 350px;
-  background: url("../images/photo_two.jpg") center/cover no-repeat;
+  background: url("../images/Industrial_commissioning.jpg") center/cover no-repeat;
 }
 
 .all_blogs .blog .two {
   height: 350px;
-  background: url("../images/photo_two.jpg") center/cover no-repeat;
+  background: url("../images/Stainless_steel_dairy_equipment.jpg") center/cover no-repeat;
 }
 
 .all_blogs .blog .three {
   height: 350px;
-  background: url("../images/photo_two.jpg") center/cover no-repeat;
+  background: url("../images/Stainless_steel_food_processing.jpg") center/cover no-repeat;
 }
 
 .all_blogs .blog .before {
@@ -1952,6 +1993,7 @@ background-color: rgba(0, 0, 0, 0.3);
   width: fit-content;
   font-weight: 550;
   background-color: var(--primary-color);
+  background-color: rgb(226, 18, 18);;
   padding: 10px 15px;
   height: 40px;
   align-self: center;
@@ -2047,7 +2089,7 @@ footer .footer_wrapper div .service {
 
 footer .footer_wrapper div .time {
   display: block;
-  color: #ffd615;
+  color: var(--primary-color);
   margin: 20px 0;
 }
 footer .footer_wrapper p {
@@ -2094,9 +2136,8 @@ footer .logo {
   width: 30px;
   height: 30px;
   /* border-radius: 12px; */
-  background-color: var(--primary-color);
+  background-color: rgb(226, 18, 18);;
   border: 1px solid var(--main-color);
-  box-shadow: 0 0 0.4rem var(--main-color);
   transition: 0.5s ease;
 
 }
