@@ -5,13 +5,6 @@
 
 /* fonts */
 
-@font-face {
-  font-family: "Roboto";
-  src: url("path/to/roboto-regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
