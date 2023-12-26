@@ -71,6 +71,9 @@ footer {
 
 
 
+
+
+
   body{
     /* font-family: 'Great Vibes'; */
     font-size: 1rem;
@@ -101,6 +104,31 @@ header,
   width: 100%;
   z-index: 100;
   background-color: transparent;
+}
+
+
+.company-name{
+  display: flex;
+}
+
+.logo_preview{
+  display: block;
+  height: 25px;
+  width: 15%;
+  margin-right: 5px;
+  background-image: url(../images/preview.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo_link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo_link:hover{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -950,7 +978,7 @@ aside .aside_container .right{
 
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1023px){
   .services .image {
     display: none;
   }
@@ -1084,7 +1112,12 @@ font-size: 1.2rem;
 
 
 .services .what_we_can_offer .service .fa-solid{
-  font-size: 60px;
+  font-size: 80px;
+  color: var(--primary-color);
+}
+
+.services .what_we_can_offer .service .fa-brands{
+  font-size: 88px;
   color: var(--primary-color);
 }
 
@@ -1100,9 +1133,11 @@ font-size: 1.2rem;
 
 
 
+
 .services .what_we_can_offer .service p{
   margin: 5px 0;
   font-size: 1rem;
+ 
 }
 
 .services .what_we_can_offer .service a{
@@ -1124,8 +1159,8 @@ font-size: 1.2rem;
   color: #ccc;
 }
 .services .what_we_can_offer .icon{
-  width: 50%;
-  margin: 10px auto;
+  /* width: 50%; */
+  margin: 10px 15px;
   text-align: center;
 }
 .services .text{

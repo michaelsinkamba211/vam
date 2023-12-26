@@ -54,28 +54,34 @@ window.addEventListener("scroll", () => {
 
 // numbers counting
 document.addEventListener('DOMContentLoaded', function () {
-    const counters = document.querySelectorAll('.numbers');
-    const speed = 200; // Adjust the speed of counting
-    const animationDuration = 3; // Adjust the animation duration in milliseconds
-  
-    counters.forEach(counter => {
+  const counters = document.querySelectorAll('.numbers');
+  const duration = 8000; // Set the total duration for counting in milliseconds
+  const animationInterval = 10; // Set the interval for updating the count in milliseconds
+
+  counters.forEach(counter => {
+      const target = +counter.getAttribute('data-count');
+      const count = +counter.innerText;
+      const steps = Math.ceil(duration / animationInterval);
+      const inc = (target - count) / steps;
+
+      let currentCount = count;
+      let step = 0;
+
       const updateCount = () => {
-        const target = +counter.getAttribute('data-count');
-        const count = +counter.innerText;
-  
-        const inc = target / (speed / (animationDuration / speed));
-  
-        if (count < target) {
-          counter.innerText = Math.ceil(count + inc);
-          setTimeout(updateCount, 1);
-        } else {
-          counter.innerText = target;
-        }
+          currentCount += inc;
+          counter.innerText = Math.ceil(currentCount);
+
+          if (++step < steps) {
+              setTimeout(updateCount, animationInterval);
+          } else {
+              counter.innerText = target;
+          }
       };
-  
+
       updateCount();
-    });
   });
+});
+
   
   // counting for the dotation part
 
@@ -223,7 +229,7 @@ contactForm.addEventListener("submit", e => {
         messageInput.value = "";
 
         setTimeout(() => {
-            submitBtn.innerText = "Send";
+            submitBtn.innerText = "Send Message";
         }, 2000);
 
     }, (error) => {

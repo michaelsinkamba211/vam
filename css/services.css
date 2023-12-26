@@ -109,6 +109,31 @@ header,
   background-color: transparent;
 }
 
+
+.company-name{
+  display: flex;
+}
+
+.logo_preview{
+  display: block;
+  height: 25px;
+  width: 15%;
+  margin-right: 5px;
+  background-image: url(../images/preview.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo_link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo_link:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 header {
   /* height: 60px; */
   width: 100%;
