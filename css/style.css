@@ -50,9 +50,10 @@ html,body {
   --logo-font: 1rem;
   --primary-color: #ffd615;
   --primary-color:rgb(226, 18, 18);
-  --primary-color:rgb(179, 0, 0);
+  /* --primary-color:rgb(179, 0, 0); */
   --black: rgb(0, 0, 0);
 }
+
 
 
 h1, h2, h3, h4, h5 {
@@ -91,7 +92,8 @@ header,
 .gallery,
 .footer_wrapper,
 .store,
-.services {
+.services,
+.engineers {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1257,7 +1259,6 @@ background-color: rgba(0, 0, 0, 0.3);
   display: block;
   width: auto;
   color: var(--primary-color);
-  color: rgb(226, 18, 18);
 }
 
 .who_are_in_org p.name {
@@ -1343,23 +1344,12 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .engineers .all_engineers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  padding: 0 205px;
-  width: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0 15px;
+  width: 100%;
   gap: 10px;
 }
 
-@media screen and (max-width:900px){
-  .engineers .all_engineers {
-    padding: 0 60px;
-  }
-}
-
-@media screen and (max-width:400px){
-  .engineers .all_engineers {
-    padding: 0 5px;
-  }
-}
 
 .engineers .all_engineers h3 {
   margin-top: 10px;
