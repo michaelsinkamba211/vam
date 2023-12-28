@@ -1337,13 +1337,29 @@ background-color: rgba(0, 0, 0, 0.3);
   font-weight: normal;
 }
 
-.engineers .all_engineers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 0 15px;
-  width: 100%;
-  gap: 10px;
+.all_engineers {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1160px;
 }
+
+@media screen and (max-width:450px){
+  .all_engineers {
+    flex-direction: column;
+  }
+  .all_engineers .engineer {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width:451px){
+  .all_engineers .engineer {
+    width: 250px;
+  }
+}
+
 
 
 .engineers .all_engineers h3 {
@@ -1353,7 +1369,7 @@ background-color: rgba(0, 0, 0, 0.3);
 .all_engineers .engineer {
   border: 1px solid transparent;
   transition: border 0.3s ease;
-  padding: 0;
+  margin:0 5px;
 }
 
 .all_engineers .engineer:hover {
@@ -1432,7 +1448,7 @@ background-color: rgba(0, 0, 0, 0.3);
 
 
 .all_engineers .contents {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
