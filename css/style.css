@@ -1169,10 +1169,10 @@ font-size: 1.2rem;
 /* who are in the company */
 
 .all_wrapper{
-  background: url("../images/appointment_photo.jpg") center/cover no-repeat;
+  background: url("../images/about_us_landing_page.jpg") center/cover no-repeat;
   width: 100%;
   margin: 70px 0;
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
   z-index: 1;
 }
@@ -1187,42 +1187,44 @@ width: 100%;
 background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* fixing here */
+
 .who_are_in_rg {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 
 .who_are_in_org {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  max-width: 1160px;
   margin: 0 auto;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1160px;
+  justify-content: center;
 }
 
 .who_are_in_org .one {
   flex: 0 0 20% ; 
   box-sizing: border-box;
   padding: 10px;
-  margin:10px 20px; 
+  margin:10px; 
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   z-index: 2;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
+  
 }
 
 .one .icon {
-  margin-bottom: 10px; 
+  margin: 10px; 
   text-align: center;
   display: flex;
   align-items: center;
+  
 }
 
 .who_are_in_org.one .text {
@@ -1245,13 +1247,14 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .who_are_in_org div.churches {
   border-right-width: 0.5px;
+  
 }
-
 
 
 .who_are_in_org div .fa-solid,
 .material-symbols-outlined {
-  font-size: 76px;
+  font-size: 70px;
+  
   text-align: center;
   display: block;
   width: auto;
@@ -1260,14 +1263,16 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .who_are_in_org p.name {
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
+  
 }
 
 .who_are_in_org p.numbers{
-  font-size: 40px;
+  font-size: 35px;
   color: var(--primary-color);
   color: rgb(226, 18, 18);
   font-weight: 700;
+  margin: 0;
 }
 
 /* Engineers */
@@ -1526,16 +1531,18 @@ background-color: rgba(0, 0, 0, 0.3);
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
 }
 
+
 .gallery .gallery_video {
   position: relative;
   height: 340px;
-  width: 100%;
+  width: 99%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1px auto;
 }
 
 .gallery .one {
@@ -1548,6 +1555,7 @@ background-color: rgba(0, 0, 0, 0.3);
   position: relative;
   background: url("../images/Stainless_steel_dairy_equipment.jpg") center/cover no-repeat;
   z-index: 2;
+  
 }
 
 .gallery .three {

@@ -55,7 +55,7 @@ window.addEventListener("scroll", () => {
 // numbers counting
 document.addEventListener('DOMContentLoaded', function () {
   const counters = document.querySelectorAll('.numbers');
-  const duration = 8000; // Set the total duration for counting in milliseconds
+  const duration = 7000; // Set the total duration for counting in milliseconds
   const animationInterval = 10; // Set the interval for updating the count in milliseconds
 
   counters.forEach(counter => {
