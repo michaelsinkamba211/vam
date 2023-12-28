@@ -64,16 +64,14 @@ h1, h2, h3, h4, h5 {
  }
 
 
+
+
+
 header,
 footer {
   margin: 0 auto;
   padding: 0 10px
 }
-
-
-
-
-
 
   body{
     /* font-family: 'Great Vibes'; */
@@ -106,6 +104,7 @@ header,
   width: 100%;
   z-index: 100;
   background-color: transparent;
+  
 }
 
 
@@ -144,6 +143,8 @@ header {
   align-items: center;
 }
 
+
+
 header nav {
   height: 60px;
   padding: 0 5px;
@@ -153,7 +154,6 @@ header nav {
   background-color: transparent;
   width: 100%;
 }
-
 
 header nav h1 {
   grid-area: companyName;
@@ -400,9 +400,6 @@ nav input {
   display: none;
 }
 
-
-
-/* home  */
 
 .home {
   background-image: url("../images/home_image.jpg");
@@ -2193,3 +2190,5 @@ footer .logo {
 footer .logo a:hover {
   box-shadow: none;
 }
+
+
