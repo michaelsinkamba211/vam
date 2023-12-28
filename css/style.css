@@ -1189,20 +1189,13 @@ background-color: rgba(0, 0, 0, 0.3);
 
 /* fixing here */
 
-.who_are_in_rg {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
 .who_are_in_org {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   max-width: 1160px;
   justify-content: center;
+ 
 }
 
 .who_are_in_org .one {
