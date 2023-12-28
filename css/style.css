@@ -1953,6 +1953,22 @@ background-color: rgba(0, 0, 0, 0.3);
   margin-top: 30px;
 }
 
+@media screen and (min-width:816px){
+  .contact_wrapper .google_map {
+    grid-area: google;
+  }
+
+  
+.contact_wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "numbers messages"
+  "google google";
+} 
+
+}
+
+
 @media screen and (max-width: 815px) {
   .contact_wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -1995,6 +2011,13 @@ background-color: rgba(0, 0, 0, 0.3);
   font-size: 1rem;
 }
 
+
+.contact_wrapper .google_map iframe{
+  /* background-color: red; */
+  width: 100%;
+  height: 400px;
+}
+
 /* lets  do messages */
 
 .contact_wrapper .messages {
@@ -2005,6 +2028,9 @@ background-color: rgba(0, 0, 0, 0.3);
   background: rgba(204, 204, 204, 0.2);
  
 }
+
+
+
 
 .messages .name,
 .messages .email {
