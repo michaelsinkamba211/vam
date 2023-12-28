@@ -1372,10 +1372,6 @@ background-color: rgba(0, 0, 0, 0.3);
   
 }
 
-.all_engineers .engineer:hover {
-  background-color: var(--primary-color);
-}
-
 
 .all_engineers .engineer p {
   color: #000;
