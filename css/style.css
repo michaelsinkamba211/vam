@@ -21,12 +21,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #fff; 
 }
+
 
 
 
@@ -50,7 +51,6 @@ html,body {
   --logo-font: 1rem;
   --primary-color: #ffd615;
   --primary-color:rgb(226, 18, 18);
-  /* --primary-color:rgb(179, 0, 0); */
   --black: rgb(0, 0, 0);
 }
 
@@ -402,7 +402,6 @@ nav input {
 
 
 .home {
-  background-image: url("../images/home_image.jpg");
   background-image: url("../images/home_img.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -995,7 +994,7 @@ aside .aside_container .right{
   z-index: -1;
   margin: 0 auto;
   border: 1px solid #ccc;
-  background: url("../images/service_image.jpg") center/cover no-repeat;
+  background: url("../images/about_image2.jpg") center/cover no-repeat;
 }
 
 .services .content {
@@ -1008,7 +1007,7 @@ aside .aside_container .right{
 
 
 .services .image {
-  height: 250px;
+  height: 230px;
   background-position:center top;
 }
 
@@ -1036,7 +1035,7 @@ aside .aside_container .right{
   
   .services .image {
       width:100%;
-      height: 350px;
+      height: 330px;
     }
 
   .services .content {
@@ -1052,6 +1051,7 @@ aside .aside_container .right{
 .about .content h1 {
   font-size: 1.6rem;
   text-align: center;
+ 
   width: 100%;
 }
 
@@ -1068,8 +1068,9 @@ font-size: 1.2rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   justify-content: space-between;
+  padding: 0 5px;
 }
 
 .services .content .what_we_can_offer .service{
@@ -1111,12 +1112,15 @@ font-size: 1.2rem;
 
 
 .services .what_we_can_offer .service .fa-solid{
-  font-size: 80px;
+  font-size: 60px;
   color: var(--primary-color);
+  color: red !important;
+/* background-color: red; */
+  
 }
 
 .services .what_we_can_offer .service .fa-brands{
-  font-size: 88px;
+  font-size: 60px;
   color: var(--primary-color);
 }
 
@@ -1127,7 +1131,7 @@ font-size: 1.2rem;
 }
 
 .services .what_we_can_offer .service h2{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 
@@ -1172,7 +1176,7 @@ font-size: 1.2rem;
   background: url("../images/about_us_landing_page.jpg") center/cover no-repeat;
   width: 100%;
   margin: 70px 0;
-  padding: 30px 0;
+  padding: 20px 0;
   position: relative;
   z-index: 1;
 }
@@ -1195,7 +1199,6 @@ background-color: rgba(0, 0, 0, 0.3);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   max-width: 1160px;
   justify-content: center;
- 
 }
 
 .who_are_in_org .one {
@@ -1209,7 +1212,6 @@ background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
   gap: 5px;
   align-items: center;
-  
 }
 
 .one .icon {
@@ -1234,19 +1236,18 @@ background-color: rgba(0, 0, 0, 0.3);
 .who_are_in_org .text{
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 
 .who_are_in_org div.churches {
   border-right-width: 0.5px;
-  
 }
 
 
 .who_are_in_org div .fa-solid,
 .material-symbols-outlined {
-  font-size: 70px;
+  font-size: 50px;
   
   text-align: center;
   display: block;
@@ -1256,12 +1257,12 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .who_are_in_org p.name {
   color: #fff;
-  font-size: 17px;
+  font-size: .9rem;
   
 }
 
 .who_are_in_org p.numbers{
-  font-size: 35px;
+  font-size: 2rem;
   color: var(--primary-color);
   color: rgb(226, 18, 18);
   font-weight: 700;
@@ -1294,6 +1295,7 @@ background-color: rgba(0, 0, 0, 0.3);
 }
 .all_engineers .engineer{
   margin: 20px 0;
+  
 }
 
 .engineers .sub_title::before,
@@ -1364,6 +1366,7 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .engineers .all_engineers h3 {
   margin-top: 10px;
+  font-size: 1rem;
 }
 
 .all_engineers .engineer {
@@ -1421,19 +1424,19 @@ background-color: rgba(0, 0, 0, 0.3);
 
 
 .all_engineers .engineer .one {
-  height: 350px;
+  height: 300px;
   background: url("../images/engineer_three.jpg") center/cover no-repeat;
   background-position: center top;
 }
 
 .all_engineers .engineer .two {
-  height: 350px;
+  height: 300px;
   background: url("../images/egineer_two.png") center/cover no-repeat;
   background-position: center top;
 }
 
 .all_engineers .engineer .four {
-  height: 350px;
+  height: 300px;
   
   background: url("../images/micheal_sinkamba.png") center/cover no-repeat;
   background-position: center top;
@@ -1441,7 +1444,7 @@ background-color: rgba(0, 0, 0, 0.3);
 
 
 .all_engineers .engineer .three {
-  height: 350px;
+  height: 300px;
   background: url("../images/engineer_three.jpg") center/cover no-repeat;
   background-position: center top;
 }
@@ -1454,7 +1457,7 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .all_engineers .fa-brands {
   display: block;
-  font-size: 2rem;
+  font-size: 1rem !important;
 }
 
 .engineers .para {
@@ -1793,10 +1796,11 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .blogs h3 {
   margin-bottom: 20px;
-  font-size: 1.6rem;
+  font-size: 1.3rem !important;
   width: 100%;
   font-size: 1.25rem;
   font-weight: normal;
+
 }
 
 .blogs .all_blogs {
@@ -1813,17 +1817,10 @@ background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
   justify-content: center;
   width: auto;
-  margin: 10px 10px;
   padding: 20px 5px;
   background-color: #fff;
   z-index: 1;
 }
-
-
-
-
-
-
 
 
 .blogs .all_blogs h3 {
@@ -1844,7 +1841,6 @@ background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   text-decoration: none;
 }
-
 
 .all_blogs .blog .one {
   height: 350px;
@@ -2075,12 +2071,11 @@ background-color: rgba(0, 0, 0, 0.3);
   width: fit-content;
   font-weight: 550;
   background-color: var(--primary-color);
-  background-color: rgb(226, 18, 18);;
+  background-color: rgb(226, 18, 18);
   padding: 10px 15px;
   height: 40px;
   align-self: center;
   border-width: 0;
-  /* border-radius: 12px; */
 }
 
 .messages .form button:hover {
@@ -2152,7 +2147,7 @@ footer .footer_wrapper {
 
 footer .footer_wrapper li {
   margin: 10px 0;
-  list-style-type: ">"; /* Add the arrow bullet style */
+  list-style-type: ">";
   padding: 10px;
   color: #fff;
 }
